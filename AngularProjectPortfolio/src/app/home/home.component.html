@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row">
+    <!--About Me-->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About Me</h2>
+        <img
+          src="../../assets/Profile.jpg"
+          alt="profile_pic"
+          width="200"
+          height="200"
+          class="rounded-circle"
+        />
+        <p>
+          As a seasoned senior web developer with 9+ years of hands-on
+          experience, I bring a wealth of expertise in crafting innovative and
+          impactful digital solutions. My journey in web development has been
+          marked by a relentless pursuit of excellence, a passion for pushing
+          boundaries, and a commitment to delivering results that exceed
+          expectations.
+        </p>
+        <p>
+          My mission is to empower businesses and organizations with
+          transformative digital solutions that drive growth, enhance
+          efficiency, and elevate brand presence. With a proven track record of
+          delivering exceptional results across diverse industries.
+        </p>
+      </div>
+    </div>
+    <!--Feature Projects-->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Feature Projects</h2>
+        <h4>{{ featuredProjects.name }}</h4>
+      </div>
+      <carousel>
+        <div *ngFor="let picture of featuredProjects.pictures">
+          <slide
+            ><img
+              src="{{ picture }}"
+              alt="slide"
+              style="display: block; width: 100px"
+          /></slide>
+        </div>
+      </carousel>
+      <h3 class="mt-2">{{ featuredProjects.summary }}</h3>
+      <p>Vist the portfolio more info!</p>
+    </div>
+  </div>
+</div>
