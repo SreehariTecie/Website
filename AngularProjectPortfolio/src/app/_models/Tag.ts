@@ -3,7 +3,7 @@ export class Tag {
   static readonly Typescript = new Tag('TypeScript', 'green');
   static readonly JavaScript = new Tag('JavaScript', 'orange');
   static readonly HTML = new Tag('HTML', 'yellow');
-  static readonly React = new Tag('React', 'Gray');
+  static readonly React = new Tag('React', 'black');
 
   private constructor(
     private readonly key: string,
